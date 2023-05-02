@@ -1,0 +1,130 @@
+@import url(fonts.css);
+
+/* -- Base styles----------------------------- */
+:root {
+	--color-base-color-balck-50: #f3f3f3;
+	--color-base-color-balck-100: #dddddd;
+	--color-base-color-balck-200: #c6c6c6;
+	--color-base-color-balck-300: #b0b0b0;
+	--color-base-color-balck-400: #9b9b9b;
+	--color-base-color-balck-500: #868686;
+	--color-base-color-balck-600: #727272;
+	--color-base-color-balck-700: #5e5e5e;
+	--color-base-color-balck-900: #393939;
+	--color-base-color-balck-800: #4b4b4b;
+	--color-base-color-balck-source: #000000;
+	--color-base-color-graphite-source: #252d38;
+	--color-base-color-graphite-50: #f2f4f5;
+	--color-base-color-graphite-100: #dadde2;
+	--color-base-color-graphite-200: #c2c7cf;
+	--color-base-color-graphite-300: #aab1bc;
+	--color-base-color-graphite-400: #949ca8;
+	--color-base-color-graphite-500: #7e8794;
+	--color-base-color-graphite-600: #6a737f;
+	--color-base-color-graphite-700: #575f6b;
+	--color-base-color-graphite-800: #454c56;
+	--color-base-color-graphite-900: #343a41;
+	--color-base-color-light-orange-source: #e37119;
+	--color-base-color-light-orange-50: #fff0e5;
+	--color-base-color-light-orange-100: #ffd2b2;
+	--color-base-color-light-orange-200: #ffb583;
+	--color-base-color-light-orange-300: #f99959;
+	--color-base-color-light-orange-400: #ea7f33;
+	--color-base-color-light-orange-500: #d5670e;
+	--color-base-color-light-orange-600: #bd5200;
+	--color-base-color-light-orange-700: #a24000;
+	--color-base-color-light-orange-800: #843100;
+	--color-base-color-light-orange-900: #662500;
+	--color-base-color-orange-source: #cb4c21;
+	--color-base-color-orange-50: #ffefe8;
+	--color-base-color-orange-100: #ffd0bb;
+	--color-base-color-orange-200: #ffb192;
+	--color-base-color-orange-300: #ff946d;
+	--color-base-color-orange-400: #f2784d;
+	--color-base-color-orange-500: #de5e33;
+	--color-base-color-orange-600: #c6481e;
+	--color-base-color-orange-700: #aa360e;
+	--color-base-color-orange-800: #8c2806;
+	--color-base-color-orange-900: #6b1e03;
+	--color-base-color-white-source: #ffffff;
+	--color-base-color-white-50: #f3f3f3;
+	--color-base-color-white-100: #dddddd;
+	--color-base-color-white-200: #c6c6c6;
+	--color-base-color-white-300: #b0b0b0;
+	--color-base-color-white-400: #9b9b9b;
+	--color-base-color-white-500: #868686;
+	--color-base-color-white-600: #727272;
+	--color-base-color-white-700: #5e5e5e;
+	--color-base-color-white-800: #4b4b4b;
+	--color-base-color-white-900: #393939;
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	position: relative;
+	flex: 1 1 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 42px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: block;
+	width: fit-content;
+}
