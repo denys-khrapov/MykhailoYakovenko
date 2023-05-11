@@ -1,7 +1,9 @@
 jQuery(document).ready(function ($) {
-	initSlick();
 	initMobileMenu();
 	initScrollTo();
+	if ($('.services-slick').length > 0 || $('.reviews-slick').length > 0) {
+		initSlick();
+	}
 });
 
 
@@ -21,8 +23,28 @@ function initSlick() {
 			}
 		]
 	});
-}
 
+	$('.reviews-slick').slick({
+		dots: true,
+		infinite: true,
+		speed: 500,
+		variableWidth: true,
+		mobileFirst: true,
+		prevArrow: $('.reviews-prev'),
+		nextArrow: $('.reviews-next'),
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					infinite: false,
+					variableWidth: false,
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+}
 
 function initMobileMenu() {
 	const headerBurger = $('.header__burger');
@@ -75,5 +97,12 @@ function initScrollTo() {
 			easing: "swing"
 		});
 		return false;
+	});
+}
+
+if ($('[data-fancybox=""]').length > 0) {
+	$('[data-fancybox=""]').fancybox({
+		autoFocus: false,
+		touch: false
 	});
 }

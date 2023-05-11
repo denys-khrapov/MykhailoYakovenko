@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/svg" href="img/favico.svg">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>MykhailoYakovenko</title>
@@ -59,14 +60,10 @@
 									<a class="header-menu__phone" href="tel:+380962832820">+38 (096)-283-28-20</a>
 									<a class="header-menu__email" href="mailto:email@example.com">email@example.com</a>
 									<ul class="header__social social">
-										<li class="social__item social__item--linkedin"><a href="#"><img
-													src="img/icons/linkedin-white.svg" width="18" height="18" alt="icon"></a></li>
-										<li class="social__item social__item--instagram"><a href="#"><img
-													src="img/icons/instagram-white.svg" width="18" height="18" alt="icon"></a></li>
-										<li class="social__item social__item--facebook"><a href="#"><img
-													src="img/icons/facebook-white.svg" width="18" height="18" alt="icon"></a></li>
-										<li class="social__item social__item--whatsapp"><a href="#"><img
-													src="img/icons/whatsapp-white.svg" width="18" height="18" alt="icon"></a></li>
+										<li class="social__item social__item--linkedin"><a href="#"></a></li>
+										<li class="social__item social__item--instagram"><a href="#"></a></li>
+										<li class="social__item social__item--facebook"><a href="#"></a></li>
+										<li class="social__item social__item--whatsapp"><a href="#"></a></li>
 									</ul>
 								</div>
 							</div>
@@ -92,7 +89,7 @@
 						<p class="hero__text">Досяг результату<br> від 0 до $1 000 000</p>
 						<div class="hero__buttons">
 							<a class="btn-full" href="#">ЗВ'ЯЗОК ЗІ МНОЮ</a>
-							<a class="btn-gif" href="#">
+							<a class="btn-gif" data-fancybox data-src="#modal-book" href="javascript:;">
 								<lord-icon class="lord-icon-outline" src="https://cdn.lordicon.com/kipaqhoz.json" trigger="loop"
 									state="morph" delay="2000" colors="primary:#fff" style="width:30px;height:30px">
 								</lord-icon>
@@ -249,7 +246,8 @@
 								<div class="services__slide-content">
 									<h3 class="services__slide-title">Збудуй свій дах професійно</h3>
 									<p class="services__slide-text">Перекриття вашого даху від проєкту до реалізації</p>
-									<a class="btn-outline" href="#">Детальніше</a>
+									<a class="btn-outline" data-fancybox data-src="#modal-services-1"
+										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
 									<img src="img/services/slide-img-1.png" alt="image">
@@ -261,7 +259,8 @@
 								<div class="services__slide-content">
 									<h3 class="services__slide-title">Збудуй свій дах професійно</h3>
 									<p class="services__slide-text">Перекриття вашого даху від проєкту до реалізації</p>
-									<a class="btn-outline" href="#">Детальніше</a>
+									<a class="btn-outline" data-fancybox data-src="#modal-services-2"
+										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
 									<img src="img/services/slide-img-2.png" alt="image">
@@ -273,12 +272,13 @@
 								<div class="services__slide-content">
 									<h3 class="services__slide-title">Збудуй свій дах професійно</h3>
 									<p class="services__slide-text">Перекриття вашого даху від проєкту до реалізації</p>
-									<a class="btn-outline" href="#">Детальніше</a>
+									<a class="btn-outline" data-fancybox data-src="#modal-services-3"
+										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
 									<img src="img/services/slide-img-3.webp" alt="image">
 									<div class="services__image-blur">
-										<img src="img/services/blur.png" alt="blur">
+										<img src="img/blur.png" alt="blur">
 									</div>
 								</div>
 							</div>
@@ -344,7 +344,7 @@
 								<img src="img/showcase-img-mobile.png" alt="image">
 							</picture>
 						</div>
-						<a class="btn-gif" href="#">
+						<a class="btn-gif" data-fancybox data-src="#modal-book" href="javascript:;">
 							<lord-icon class="lord-icon-outline" src="https://cdn.lordicon.com/kipaqhoz.json" trigger="loop"
 								state="morph" delay="2000" colors="primary:#fff" style="width:30px;height:30px">
 							</lord-icon>
@@ -411,49 +411,147 @@
 							</div>
 							<div class="intagram__text">
 								<p>@myhaylo.yakovenko</p>
-								<a href="#">ПЕРЕЙТИ</a>
+								<a href="https://www.instagram.com/myhaylo.yakovenko/">ПЕРЕЙТИ</a>
 							</div>
 						</div>
 					</div>
 					<div class="instagram__post">
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-1-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-1.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-2-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-2.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-3-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-3.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-4-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-4.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-5-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-5.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-6-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-6.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-7-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-7.webp" alt="image">
-							</div>
+							</a>
 						</div>
 						<div class="instagram__item">
-							<div class="instagram__image-holder">
+							<a class="instagram__image-holder" href="img/instagram/post-8-@2x.webp" data-fancybox="images">
 								<img src="img/instagram/post-8.webp" alt="image">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-reviews reviews">
+				<div class="reviews__container container">
+					<div class="reviews__header">
+						<h2 class="reviews__title">Відео-відгуки клієнтів</h2>
+						<div class="reviews__nav">
+							<button class="reviews-prev prev-btn"></button>
+							<button class="reviews-next next-btn"></button>
+						</div>
+					</div>
+					<div class="reviews__slider reviews-slick">
+						<div class="reviews__slide">
+							<div class="reviews__slide-holder">
+								<div class="reviews__slide-content">
+									<h3 class="reviews__slide-title">Courtney Henry</h3>
+									<p class="reviews__slide-text">Love their drink specials. Bartenders super nice. Spent a week
+										at UCSF and this
+										was a very nice break for the parental unit.</p>
+									<a class="btn-outline" data-fancybox
+										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
+								</div>
+								<div class="reviews__image-holder">
+									<img src="img/reviews/reviews-img-1.webp" alt="image">
+								</div>
+								<div class="reviews__image-blur">
+									<img src="img/blur.png" alt="blur">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slide">
+							<div class="reviews__slide-holder">
+								<div class="reviews__slide-content">
+									<h3 class="reviews__slide-title">Pablo Codjo</h3>
+									<p class="reviews__slide-text">Keren seperti namanya 👍</p>
+									<a class="btn-outline" data-fancybox
+										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
+								</div>
+								<div class="reviews__image-holder">
+									<img src="img/reviews/reviews-img-2.webp" alt="image">
+								</div>
+								<div class="reviews__image-blur">
+									<img src="img/blur.png" alt="blur">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slide">
+							<div class="reviews__slide-holder">
+								<div class="reviews__slide-content">
+									<h3 class="reviews__slide-title">Bernard Agbahounde</h3>
+									<p class="reviews__slide-text">Memuaskan, kamar yang bersih dan nyaman walau terhitung
+										hotel/bangunan lama. Namun kesan mewah masih bisa kami.</p>
+									<a class="btn-outline" data-fancybox
+										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
+								</div>
+								<div class="reviews__image-holder">
+									<img src="img/reviews/reviews-img-3.webp" alt="image">
+								</div>
+								<div class="reviews__image-blur">
+									<img src="img/blur.png" alt="blur">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slide">
+							<div class="reviews__slide-holder">
+								<div class="reviews__slide-content">
+									<h3 class="reviews__slide-title">Jerome Bell</h3>
+									<p class="reviews__slide-text">Dateng juga akhirnya yang ditunggu2. Enakkkk. Baru pertama
+										kali beli. Sampenya juga cepettt 😊 thanksss.</p>
+									<a class="btn-outline" data-fancybox
+										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
+								</div>
+								<div class="reviews__image-holder">
+									<img src="img/reviews/reviews-img-4.webp" alt="image">
+								</div>
+								<div class="reviews__image-blur">
+									<img src="img/blur.png" alt="blur">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slide">
+							<div class="reviews__slide-holder">
+								<div class="reviews__slide-content">
+									<h3 class="reviews__slide-title">Ronald Richards</h3>
+									<p class="reviews__slide-text">Makasih banyak yaa... Dapet tambahan promo. Semoga berkah yaa
+										Aamiin... Ayo jangan ragu beli cemilan dimari ... 😊</p>
+									<a class="btn-outline" data-fancybox
+										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
+								</div>
+								<div class="reviews__image-holder">
+									<img src="img/reviews/reviews-img-5.webp" alt="image">
+								</div>
+								<div class="reviews__image-blur">
+									<img src="img/blur.png" alt="blur">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -567,7 +665,165 @@
 			</div>
 		</footer>
 	</div>
+	<div style="display: none;" id="modal-book" class="modal-book">
+		<div class="modal-book__inner">
+			<div class="modal-book__left-column">
+				<div class="modal-book__content-holder">
+					<h2 class="modal-book__title">Книга “PRO ДАХ”</h2>
+					<p class="modal-book__description">Книга створена для тих, хто планує будівництво нового даху чи
+						перекриття
+						старого.
+					</p>
+					<p class="modal-book__text">Ця книга — не інструкція з монтажу, а компас для розуміння послідовності
+						прийняття
+						рішень та виконання робіт.</p>
+					<p class="modal-book__text">Ви знайдете відповіді на такі питання:</p>
+					<ul class="modal-book__list">
+						<li>Етапи будівництва даху</li>
+						<li>Підготовка до ремонту та реконструкції</li>
+						<li>Проєкт будівництва даху — потрібен чи ні</li>
+						<li>Вибір покрівельних матеріалів</li>
+						<li>Опис архітектурних стилів будинків, які поширені в Україні + фото та відео реалізованих об'єктів.
+							Інтерв’ю з архітекторами про плюси та мінуси кожного стилю</li>
+						<li>Міфи про дахи</li>
+					</ul>
+					<p class="modal-book__text">Окрім того, майже в кожному розділі додані поради та чек-листів із
+						практичного
+						досвіду.</p>
+				</div>
+			</div>
+			<div class="modal-book__right-column">
+				<div class="modal-book__content-holder">
+					<div class="modal-book__image-holder">
+						<img src="img/modal-book-img.png" alt="image">
+					</div>
+					<div class="modal-book__formats">
+						<p>Формат: <span>PDF</span></p>
+						<p>Кількість сторінок: <span>154</span></p>
+						<p>Об `єм: <span>2,3 мб</span></p>
+					</div>
+					<form action="#">
+						<div class="form-inner">
+							<div class="input-holder input-holder--name">
+								<span><input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName"></span>
+							</div>
+							<div class="input-holder input-holder--phone">
+								<span><input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber"></span>
+							</div>
+							<div class="input-holder input-holder--email">
+								<span><input type="email" placeholder="ПОШТА" name="email"></span>
+							</div>
+							<button class="btn-full" type="submit">ОТРИМАТИ КНИГУ</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-services-1" class="modal-services">
+		<div class="modal-services__inner">
+			<div class="modal-services__left-column">
+				<div class="modal-services__content-holder">
+					<h2 class="modal-services__title">Збудуй свій дах професійно</h2>
+					<p class="modal-services__description">Перекриття вашого даху від проєкту до реалізації</p>
+					<p class="modal-services__text">Будівництво нового даху, перекриття наявного чи облаштування горища в
+						житлову
+						мансарду — складний процес, який вимагає врахування безлічі технічних рішень, про які людина, що не є
+						спеціалістом, навіть не здогадується.</p>
+					<p class="modal-services__text">Понад 16 років я спеціалізуюсь на покрівельній справі, є засновником
+						торговельно-монтажної компанії «Нове
+						місто». Разом з командою професійних покрівельників допоможу збудувати красивий та надійний дах:</p>
+					<ul class="modal-services__list">
+						<li>Розробка проєкту даху для реконструкції горища під житло чи комерційну діяльність</li>
+						<li>Будівництво чи перекриття даху «під ключ»</li>
+						<li>Реконструкція горища в комерційне приміщення чи житлову мансарду</li>
+						<li>Підбір та доставлення матеріалів для даху (металочерепиця, профнастил, бітумна черепиця та ін.)
+						</li>
+					</ul>
+					<a class="btn-full" href="#">НАДІСЛАТИ ЗАЯВКУ</a>
+				</div>
+			</div>
+			<div class="modal-services__right-column">
+				<div class="modal-services__image-holder">
+					<picture>
+						<source srcset="img/services/modal-services-img-1.webp" media="(min-width:1200px)">
+						<img src="img/services/modal-services-img-1-mobile.webp" alt="image">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-services-2" class="modal-services">
+		<div class="modal-services__inner">
+			<div class="modal-services__left-column">
+				<div class="modal-services__content-holder">
+					<div class="modal-services__scrollbar-content">
+						<h2 class="modal-services__title">Організуй власний покрівельний бізнес</h2>
+						<p class="modal-services__description">Курс «Як заробляти на будівництві дахів від 100 000 грн в
+							місяць»
+						</p>
+						<p class="modal-services__text">Будівельний бізнес завжди розвивався. А враховуючи майбутній попит на
+							такі послуги при відновленні після перемоги, зараз найкращий час, щоб підготуватись.</p>
+						<p class="modal-services__text">Бізнес у сфері будівництва дахів цікавий з кількох причин:</p>
+						<ul class="modal-services__list">
+							<li>Дах надає завершеної форми будинку, формує стиль. Цим ви створюєте красоту вулиці, свого міста,
+								України в цілому;</li>
+							<li>Невеликий вхід у бізнес: орендований офіс, купівля оргтехніки, автотранспорт за потреби;</li>
+							<li>Клієнт купляє все в комплексі: від покрівельного матеріалу до саморізів, на яких ви додатково
+								заробляєте;</li>
+							<li>Перспективність розвитку й масштабування.</li>
+						</ul>
+						<p class="modal-services__text">Тому я створив курс, який допоможе реалізувати все перелічене. Як
+							результат ви дізнаєтесь про систему, яка буде заробляти вам гроші.</p>
+						<p class="modal-services__text"><b>Програма курсу:</b></p>
+						<ol class="modal-services__list-ol">
+							<li>Ознайомлення із потенційним ринком діяльності.
+								Побудова відділу продажу з «0». </li>
+							<li>Маркетинг. Опис цільової аудиторії. Система залучення лідів: макети, чат-боти, сайт.</li>
+							<li>Процес роботи: замір та розрахунок матеріалів для будівництва чи перекриття даху. Наймання та
+								контроль працівників. </li>
+							<li>Партнерство: де і як купувати матеріали.</li>
+							<li>Технології та стандарти: посадові інструкції, стандарти поведінки, договори та ін.
+							</li>
+							<li>Планування діяльності підприємства, аналітика.</li>
+						</ol>
+						<p class="modal-services__text"><span><b>Окрім цього можливий особистий супровід.</b></span></p>
+						<a class="btn-full" href="#">НАДІСЛАТИ ЗАЯВКУ</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-services__right-column">
+				<div class="modal-services__image-holder">
+					<picture>
+						<source srcset="img/services/modal-services-img-2.webp" media="(min-width:1200px)">
+						<img src="img/services/modal-services-img-2-mobile.webp" alt="image">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" id="modal-services-3" class="modal-services">
+		<div class="modal-services__inner">
+			<div class="modal-services__left-column">
+				<div class="modal-services__content-holder">
+					<h2 class="modal-services__title">Виведи свій бізнес на новий рівень</h2>
+					<p class="modal-services__description">Індивідуальна консультація для розвитку вашого бізнесу
+					</p>
+					<a class="btn-full" href="#">НАДІСЛАТИ ЗАЯВКУ</a>
+				</div>
+			</div>
+			<div class="modal-services__right-column">
+				<div class="modal-services__image-holder">
+					<picture>
+						<source srcset="img/services/modal-services-img-3.webp" media="(min-width:1200px)">
+						<img src="img/services/modal-services-img-3-mobile.webp" alt="image">
+					</picture>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 	<script src="js/app.js"></script>

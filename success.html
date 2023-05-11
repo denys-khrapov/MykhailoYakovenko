@@ -12,65 +12,124 @@
 
 <body>
 	<div class="wrapper">
-		<div class="content">
-			<main>
-				<section class="section-success success">
-					<div class="success__container container">
-						<div class="success__header">
-							<h2 class="success__title">Дякую, що заповнили заявку!</h2>
-							<p class="success__text">Вашу заявку було успішно відправлено. Я зв'яжуся з вами найближчим часом,
-								щоб
-								обговорити деталі вашого запиту та відповісти на будь-які питання, які можуть виникнути.</p>
-							<a class="btn-back" href="index.html">НА ГОЛОВНУ</a>
+		<header class="header">
+			<div class="header__container container">
+				<a href="/" class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+				<div class="header__burger">
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a class="header__link scroll-to" href="#section-hero">ГОЛОВНА</a>
+						</li>
+						<li>
+							<a class="header__link scroll-to" href="#section-about">ПРО МЕНЕ</a>
+						</li>
+						<li>
+							<a class="header__link scroll-to" href="#section-services">ПОСЛУГИ</a>
+						</li>
+						<li>
+							<a class="header__link scroll-to" href="#section-cta">ФУНДАЦІЯ</a>
+						</li>
+						<li>
+							<a class="header__link scroll-to" href="#section-showcase">КНИГА</a>
+						</li>
+					</ul>
+					<div class="header__burger">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="header-menu__footer">
+						<div class="header-menu__footer-top-column">
+							<h3>Зв'яжіться зі мною</h3>
+							<p>Я ціную вашу думку і завжди радий почути ваші відгуки. Будь ласка, заповніть цю форму
+								зворотного зв'язку, і я зв'яжуся з вами найближчим часом.</p>
 						</div>
-						<div class="cards">
-							<div class="cards__left-column">
-								<div class="cards__image-holder">
-									<img src="img/success-img.png" alt="image">
-								</div>
-								<div class="cards__text-holder">
-									<p>Пропоную ознайомитись з моєю книгою, яка проллє світло на цікаві деталі нашої роботи!</p>
-									<a class="btn-full" href="#">ДЕТАЛЬНІШЕ</a>
-								</div>
+						<div class="header-menu__footer-bottom-column">
+							<div class="header-menu__footer-item">
+								<p>Контакти</p>
 							</div>
-							<div class="cards__right-column">
-								<div class="cards__image-holder">
-									<img src="img/avatar.webp" alt="avatar">
-								</div>
-								<div class="cards__text-holder">
-									<p>Я ціную ваш час і довіру, яку ви надаєте, і обіцяю зробити все можливе, щоб надати вам
-										високоякісне обслуговування та вирішити питання, що виникли.</p>
-									<p>Якщо у вас є будь-які додаткові питання або коментарі, будь ласка, не соромтеся зв'язатися
-										зі мною зручним для вас способом.</p>
-									<a class="cards__phone" href="tel:+380962832820">+38 (096)-283-28-20</a>
+							<div class="header-menu__footer-item">
+								<a class="header-menu__phone" href="tel:+380962832820">+38 (096)-283-28-20</a>
+								<a class="header-menu__email" href="mailto:email@example.com">email@example.com</a>
+								<ul class="header__social social">
+									<li class="social__item social__item--linkedin"><a href="#"></a></li>
+									<li class="social__item social__item--instagram"><a href="#"></a></li>
+									<li class="social__item social__item--facebook"><a href="#"></a></li>
+									<li class="social__item social__item--whatsapp"><a href="#"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="overlay"></div>
+				<ul class="header__social social">
+					<li class="social__item social__item--phone"><a href="tel:+380962832820">+38 (096)-283-28-20</a>
+					</li>
+					<li class="social__item social__item--linkedin"><a href="#"></a></li>
+					<li class="social__item social__item--instagram"><a href="#"></a></li>
+					<li class="social__item social__item--facebook"><a href="#"></a></li>
+					<li class="social__item social__item--whatsapp"><a href="#"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="content">
+			<section class="section-success success">
+				<div class="success__container container">
+					<div class="success__header">
+						<h2 class="success__title">Дякую, що заповнили заявку!</h2>
+						<p class="success__text">Вашу заявку було успішно відправлено. Я зв'яжуся з вами найближчим часом,
+							щоб
+							обговорити деталі вашого запиту та відповісти на будь-які питання, які можуть виникнути.</p>
+						<a class="btn-back" href="index.html">НА ГОЛОВНУ</a>
+					</div>
+					<div class="cards">
+						<div class="cards__left-column">
+							<div class="cards__image-holder">
+								<img src="img/success-img.png" alt="image">
+							</div>
+							<div class="cards__text-holder">
+								<p>Пропоную ознайомитись з моєю книгою, яка проллє світло на цікаві деталі нашої роботи!</p>
+								<a class="btn-full" href="#">ДЕТАЛЬНІШЕ</a>
+							</div>
+						</div>
+						<div class="cards__right-column">
+							<div class="cards__image-holder">
+								<img src="img/avatar.webp" alt="avatar">
+							</div>
+							<div class="cards__text-holder">
+								<p>Я ціную ваш час і довіру, яку ви надаєте, і обіцяю зробити все можливе, щоб надати вам
+									високоякісне обслуговування та вирішити питання, що виникли.</p>
+								<p>Якщо у вас є будь-які додаткові питання або коментарі, будь ласка, не соромтеся зв'язатися
+									зі мною зручним для вас способом.</p>
+								<a class="cards__phone" href="tel:+380962832820">+38 (096)-283-28-20</a>
 
-									<div class="cards__social social">
-										<div class="social__item">
-											<a href="#"><img src="img/icons/linkedin-white.svg" width="20" height="20"
-													alt="icon"></a>
-										</div>
-										<div class="social__item">
-											<a href="#"><img src="img/icons/instagram-white.svg" width="20" height="20"
-													alt="icon"></a>
-										</div>
-										<div class="social__item">
-											<a href="#"><img src="img/icons/facebook-white.svg" width="20" height="20"
-													alt="icon"></a>
-										</div>
-										<div class="social__item">
-											<a href="#"><img src="img/icons/whatsapp-white.svg" width="20" height="20"
-													alt="icon"></a>
-										</div>
+								<div class="cards__social social">
+									<div class="social__item social__item--linkedin">
+										<a href="#"></a>
+									</div>
+									<div class="social__item social__item--instagram">
+										<a href="#"></a>
+									</div>
+									<div class="social__item social__item--facebook">
+										<a href="#"></a>
+									</div>
+									<div class="social__item social__item--whatsapp">
+										<a href="#"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</main>
-		</div>
+				</div>
+			</section>
+		</main>
 		<!-- Footer section -->
-		<div class="section-footer footer">
+		<footer class="section-footer footer">
 			<div class="footer__container container">
 				<div class="footer__logo">
 					<svg width="150" height="50" viewBox="0 0 150 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,7 +186,7 @@
 					<p>© 2023 | MikhayloYakovenko.com.ua | Всі права захищені</p>
 				</div>
 			</div>
-		</div>
+		</footer>
 	</div>
 
 	<script src="js/jquery-3.6.4.min.js"></script>
