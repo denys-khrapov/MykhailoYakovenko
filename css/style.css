@@ -938,6 +938,7 @@ textarea {
 	background-color: var(--color-base-color-white-source);
 	border-radius: 4px;
 	padding: 32px;
+	height: 100%;
 }
 
 .services__image-holder {
@@ -958,9 +959,11 @@ textarea {
 .services__slide-content {
 	display: flex;
 	flex-direction: column;
-	row-gap: 57px;
+	row-gap: 19px;
+	justify-content: space-between;
 	position: relative;
 	z-index: 2;
+	height: inherit;
 }
 
 .services__slide-title {
@@ -3504,6 +3507,14 @@ textarea {
 	/* -- Services styles----------------------------- */
 	.services__slider {
 		flex-direction: column;
+	}
+
+	.services__slider .slick-track {
+		display: flex !important;
+	}
+
+	.services__slider .slick-slide {
+		height: inherit !important;
 	}
 }
 
