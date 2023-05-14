@@ -18,7 +18,7 @@
 			<header class="header">
 				<div class="header__container container">
 					<a href="/" class="header__logo">
-						<img src="img/logo.svg" alt="logo">
+						<img src="img/logo.svg" width="150" height="50" alt="logo">
 					</a>
 					<div class="header__burger">
 						<span></span>
@@ -26,19 +26,19 @@
 					</div>
 					<nav class="header__menu">
 						<ul class="header__list">
-							<li>
+							<li class="menu-item  current-menu-item current_page_item">
 								<a class="header__link scroll-to" href="#section-hero">ГОЛОВНА</a>
 							</li>
-							<li>
+							<li class="menu-item">
 								<a class="header__link scroll-to" href="#section-about">ПРО МЕНЕ</a>
 							</li>
-							<li>
+							<li class="menu-item">
 								<a class="header__link scroll-to" href="#section-services">ПОСЛУГИ</a>
 							</li>
-							<li>
+							<li class="menu-item">
 								<a class="header__link scroll-to" href="#section-cta">ФУНДАЦІЯ</a>
 							</li>
-							<li>
+							<li class="menu-item">
 								<a class="header__link scroll-to" href="#section-showcase">КНИГА</a>
 							</li>
 						</ul>
@@ -88,7 +88,7 @@
 						<p class="hero__text">Підприємець з досвідом у покрівельному бізнесі понад<br> 16 років</p>
 						<p class="hero__text">Досяг результату<br> від 0 до $1 000 000</p>
 						<div class="hero__buttons">
-							<a class="btn-full" href="#">ЗВ'ЯЗОК ЗІ МНОЮ</a>
+							<a class="btn-full" data-fancybox data-src="#modal-book" href="javascript:;">ЗВ'ЯЗОК ЗІ МНОЮ</a>
 							<a class="btn-gif" data-fancybox data-src="#modal-book" href="javascript:;">
 								<lord-icon class="lord-icon-outline" src="https://cdn.lordicon.com/kipaqhoz.json" trigger="loop"
 									state="morph" delay="2000" colors="primary:#fff" style="width:30px;height:30px">
@@ -101,7 +101,7 @@
 						<div class="hero__image-holder">
 							<picture>
 								<source srcset="img/hero-quote.svg" media="(min-width:1200px)">
-								<img src="img/hero-quote-1199.svg" alt="image">
+								<img src="img/hero-quote-1199.svg" width="287" height="117" alt="image">
 							</picture>
 						</div>
 						<div class="hero__text-quotes">
@@ -232,7 +232,7 @@
 						<picture>
 							<source srcset="img/about-img.webp" media="(min-width:1200px)">
 							<source srcset="img/about-img-tablet.webp" media="(min-width:768px)">
-							<img src="img/about-img-mobile.webp" alt="image">
+							<img src="img/about-img-mobile.jpg" width="431" height="570" alt="image">
 						</picture>
 					</div>
 				</div>
@@ -250,7 +250,10 @@
 										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
-									<img src="img/services/slide-img-1.png" alt="image">
+									<picture>
+										<source srcset="img/services/slide-img-1.webp">
+										<img src="img/services/slide-img-1.png" width="356" height="354" alt="image">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -264,7 +267,10 @@
 										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
-									<img src="img/services/slide-img-2.png" alt="image">
+									<picture>
+										<source srcset="img/services/slide-img-2.webp">
+										<img src="img/services/slide-img-2.png" width="356" height="354" alt="image">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -277,9 +283,15 @@
 										href="javascript:;">Детальніше</a>
 								</div>
 								<div class="services__image-holder">
-									<img src="img/services/slide-img-3.webp" alt="image">
+									<picture>
+										<source srcset="img/services/slide-img-3.webp">
+										<img src="img/services/slide-img-3.jpg" width="356" height="354" alt="image">
+									</picture>
 									<div class="services__image-blur">
-										<img src="img/blur.png" alt="blur">
+										<picture>
+											<source srcset="img/blur.webp">
+											<img src="img/blur.png" width="356" height="354" alt="blur">
+										</picture>
 									</div>
 								</div>
 							</div>
@@ -290,7 +302,7 @@
 			<section class="section-cta cta" id="section-cta">
 				<div class="cta__left-column">
 					<div class="cta__art-holder">
-						<img src="img/cta-art.svg" alt="art">
+						<img src="img/cta-art.svg" width="390" height="879" alt="art">
 					</div>
 					<div class="cta__content">
 						<h3 class="cta__subtitle">Благодійний проєкт</h3>
@@ -310,27 +322,30 @@
 						<h2 class="form-block__title">Безкоштовна консультація</h2>
 						<p class="form-block__text">Отримайте безкоштовну консультацію по відновленню пошкодженого даху
 							внаслідок бойових дій.</p>
-						<form action="#">
-							<div class="input-holder input-holder--name">
-								<input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName">
-							</div>
-							<div class="input-holder input-holder--phone">
-								<input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber">
-							</div>
-							<div class="form-block__checkbox">
-								<div class="form-block__checkbox-holder">
-									<input type="checkbox" id="consultation_the_roof" name="arttherapy"
-										value="КОНСУЛЬТАЦІЯ ЩОДО ДАХУ">
-
-									<label for="consultation_the_roof">КОНСУЛЬТАЦІЯ ЩОДО ДАХУ</label>
+						<form action="#" class="form">
+							<div class="form__inner">
+								<div class="input-holder input-holder--name">
+									<span><input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName"></span>
 								</div>
-								<div class="form-block__checkbox-holder">
-									<input type="checkbox" id="join_the_project" name="metaphor_cards"
-										value="ХОЧУ ПРИЄДНАТИСЬ ДО ПРОЄКТУ">
-									<label for="join_the_project">ХОЧУ ПРИЄДНАТИСЬ ДО ПРОЄКТУ</label>
+								<div class="input-holder input-holder--phone">
+									<span><input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber"></span>
 								</div>
+								<div class="form-block__checkbox">
+									<div class="form-block__checkbox-holder">
+										<span>
+											<input type="checkbox" id="consultation_the_roof" name="arttherapy"
+												value="КОНСУЛЬТАЦІЯ ЩОДО ДАХУ">
+											<label for="consultation_the_roof">КОНСУЛЬТАЦІЯ ЩОДО ДАХУ</label></span>
+									</div>
+									<div class="form-block__checkbox-holder">
+										<span>
+											<input type="checkbox" id="join_the_project" name="metaphor_cards"
+												value="ХОЧУ ПРИЄДНАТИСЬ ДО ПРОЄКТУ">
+											<label for="join_the_project">ХОЧУ ПРИЄДНАТИСЬ ДО ПРОЄКТУ</label></span>
+									</div>
+								</div>
+								<button class="btn-full" type="submit">НАДІСЛАТИ ЗАЯВКУ</button>
 							</div>
-							<button class="btn-full" type="submit">НАДІСЛАТИ ЗАЯВКУ</button>
 						</form>
 					</div>
 				</div>
@@ -340,9 +355,9 @@
 					<div class="showcase__left-column">
 						<div class="showcase__image-holder">
 							<picture>
-								<source srcset="img/showcase-img.png" media="(min-width:1200px)">
-								<source srcset="img/showcase-img-tablet.png" media="(min-width:576px)">
-								<img src="img/showcase-img-mobile.png" alt="image">
+								<source srcset="img/showcase-img.webp" media="(min-width:1200px)">
+								<source srcset="img/showcase-img-tablet.webp" media="(min-width:576px)">
+								<img src="img/showcase-img-mobile.png" width="225" height="254" alt="image">
 							</picture>
 						</div>
 						<a class="btn-gif" data-fancybox data-src="#modal-book" href="javascript:;">
@@ -366,21 +381,26 @@
 							</p>
 						</div>
 						<div class="showcase__form-content">
-							<form action="#">
-								<div class="input-holder input-holder--name">
-									<input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName">
+							<form action="#" class="form">
+								<div class="form__inner">
+									<div class="input-holder input-holder--name">
+										<span><input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName"></span>
+									</div>
+									<div class="input-holder input-holder--phone">
+										<span><input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber"></span>
+									</div>
+									<div class="input-holder input-holder--email">
+										<span><input type="email" placeholder="ПОШТА" name="email"></span>
+									</div>
+									<button class="btn-full" type="submit">ОТРИМАТИ КНИГУ</button>
 								</div>
-								<div class="input-holder input-holder--phone">
-									<input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber">
-								</div>
-								<div class="input-holder input-holder--email">
-									<input type="email" placeholder="ПОШТА" name="email">
-								</div>
-								<button class="btn-full" type="submit">ОТРИМАТИ КНИГУ</button>
 							</form>
 							<div class="quote-block">
 								<div class="quote-block__image-holder">
-									<img src="img/avatar.webp" alt="avatar">
+									<picture>
+										<source srcset="img/avatar.webp">
+										<img src="img/avatar.jpg" width="72" height="71" alt="avatar">
+									</picture>
 								</div>
 								<div class="quote-block__text-holder">
 									<p>Цією книгою я хочу донести до читачів ідею професіоналізму і цінності роботи
@@ -393,7 +413,7 @@
 				<div class="showcase__label">
 					<div class="showcase__label-content">
 						<div class="showcase__icon-holder">
-							<img src="img/icons/download.svg" alt="icon">
+							<img src="img/icons/download.svg" width="24" height="24" alt="icon">
 						</div>
 						<p>
 							БЕЗКОШТОВНЕ
@@ -408,7 +428,10 @@
 						<h2 class="instagram__title">Слідкуйте за мною в</h2>
 						<div class="intagram__links">
 							<div class="instagram__avatar">
-								<img src="img/avatar-instagram.png" alt="avatar">
+								<picture>
+									<source srcset="img/avatar-instagram.webp">
+									<img src="img/avatar-instagram.png" width="50" height="50" alt="avatar">
+								</picture>
 							</div>
 							<div class="intagram__text">
 								<p>@myhaylo.yakovenko</p>
@@ -419,42 +442,66 @@
 					<div class="instagram__post">
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-1-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-1.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-1.webp">
+									<img src="img/instagram/post-1.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-2-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-2.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-2.webp">
+									<img src="img/instagram/post-2.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-3-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-3.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-3.webp">
+									<img src="img/instagram/post-3.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-4-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-4.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-4.webp">
+									<img src="img/instagram/post-4.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-5-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-5.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-5.webp">
+									<img src="img/instagram/post-5.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-6-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-6.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-6.webp">
+									<img src="img/instagram/post-6.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-7-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-7.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-7.webp">
+									<img src="img/instagram/post-7.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 						<div class="instagram__item">
 							<a class="instagram__image-holder" href="img/instagram/post-8-@2x.webp" data-fancybox="images">
-								<img src="img/instagram/post-8.webp" alt="image">
+								<picture>
+									<source srcset="img/instagram/post-8.webp">
+									<img src="img/instagram/post-8.jpg" width="261" height="261" alt="image">
+								</picture>
 							</a>
 						</div>
 					</div>
@@ -481,10 +528,16 @@
 										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
 								</div>
 								<div class="reviews__image-holder">
-									<img src="img/reviews/reviews-img-1.webp" alt="image">
+									<picture>
+										<source srcset="img/reviews/reviews-img-1.webp">
+										<img src="img/reviews/reviews-img-1.jpg" width="356" height="378" alt="image">
+									</picture>
 								</div>
 								<div class="reviews__image-blur">
-									<img src="img/blur.png" alt="blur">
+									<picture>
+										<source srcset="img/blur.webp">
+										<img src="img/blur.png" width="356" height="354" alt="blur">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -497,10 +550,16 @@
 										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
 								</div>
 								<div class="reviews__image-holder">
-									<img src="img/reviews/reviews-img-2.webp" alt="image">
+									<picture>
+										<source srcset="img/reviews/reviews-img-2.webp">
+										<img src="img/reviews/reviews-img-2.jpg" width="356" height="378" alt="image">
+									</picture>
 								</div>
 								<div class="reviews__image-blur">
-									<img src="img/blur.png" alt="blur">
+									<picture>
+										<source srcset="img/blur.webp">
+										<img src="img/blur.png" width="356" height="354" alt="blur">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -514,10 +573,16 @@
 										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
 								</div>
 								<div class="reviews__image-holder">
-									<img src="img/reviews/reviews-img-3.webp" alt="image">
+									<picture>
+										<source srcset="img/reviews/reviews-img-3.webp">
+										<img src="img/reviews/reviews-img-3.jpg" width="356" height="378" alt="image">
+									</picture>
 								</div>
 								<div class="reviews__image-blur">
-									<img src="img/blur.png" alt="blur">
+									<picture>
+										<source srcset="img/blur.webp">
+										<img src="img/blur.png" width="356" height="354" alt="blur">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -531,10 +596,16 @@
 										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
 								</div>
 								<div class="reviews__image-holder">
-									<img src="img/reviews/reviews-img-4.webp" alt="image">
+									<picture>
+										<source srcset="img/reviews/reviews-img-4.webp">
+										<img src="img/reviews/reviews-img-4.jpg" width="356" height="378" alt="image">
+									</picture>
 								</div>
 								<div class="reviews__image-blur">
-									<img src="img/blur.png" alt="blur">
+									<picture>
+										<source srcset="img/blur.webp">
+										<img src="img/blur.png" width="356" height="354" alt="blur">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -548,10 +619,16 @@
 										href="https://www.youtube.com/watch?v=TaINndH-bZ0&ab_channel=Mr.ChillLofi">Відтворити</a>
 								</div>
 								<div class="reviews__image-holder">
-									<img src="img/reviews/reviews-img-5.webp" alt="image">
+									<picture>
+										<source srcset="img/reviews/reviews-img-5.webp">
+										<img src="img/reviews/reviews-img-5.jpg" width="356" height="378" alt="image">
+									</picture>
 								</div>
 								<div class="reviews__image-blur">
-									<img src="img/blur.png" alt="blur">
+									<picture>
+										<source srcset="img/blur.webp">
+										<img src="img/blur.png" width="356" height="354" alt="blur">
+									</picture>
 								</div>
 							</div>
 						</div>
@@ -589,18 +666,20 @@
 						</div>
 					</div>
 					<div class="contacts__right-column">
-						<form action="#">
-							<div class="input-holder input-holder--name">
-								<input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName">
+						<form action="#" class="form">
+							<div class="form__inner">
+								<div class="input-holder input-holder--name">
+									<span><input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName"></span>
+								</div>
+								<div class="input-holder input-holder--phone">
+									<span><input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber"></span>
+								</div>
+								<div class="input-holder input-holder--email">
+									<span><input type="email" placeholder="ПОШТА" name="email"></span>
+								</div>
+								<textarea placeholder="ВАШЕ ПОВІДОМЛЕННЯ"></textarea>
+								<button class="btn-full" type="submit">НАДІСЛАТИ</button>
 							</div>
-							<div class="input-holder input-holder--phone">
-								<input type="tel" placeholder="ТЕЛЕФОН" name="phoneNumber">
-							</div>
-							<div class="input-holder input-holder--email">
-								<input type="email" placeholder="ПОШТА" name="email">
-							</div>
-							<textarea placeholder="ВАШЕ ПОВІДОМЛЕННЯ"></textarea>
-							<button class="btn-full" type="submit">НАДІСЛАТИ</button>
 						</form>
 					</div>
 				</div>
@@ -696,14 +775,17 @@
 			<div class="modal-book__right-column">
 				<div class="modal-book__content-holder">
 					<div class="modal-book__image-holder">
-						<img src="img/modal-book-img.png" alt="image">
+						<picture>
+							<source srcset="img/modal-book-img.webp">
+							<img src="img/modal-book-img.png" width="194" height="264" alt="image">
+						</picture>
 					</div>
 					<div class="modal-book__formats">
 						<p>Формат: <span>PDF</span></p>
 						<p>Кількість сторінок: <span>154</span></p>
 						<p>Об `єм: <span>2,3 мб</span></p>
 					</div>
-					<form action="#">
+					<form action="#" class="form">
 						<div class="form-inner">
 							<div class="input-holder input-holder--name">
 								<span><input type="text" placeholder="ВАШЕ ІМ'Я" name="firstName"></span>
@@ -748,7 +830,7 @@
 				<div class="modal-services__image-holder">
 					<picture>
 						<source srcset="img/services/modal-services-img-1.webp" media="(min-width:1200px)">
-						<img src="img/services/modal-services-img-1-mobile.webp" alt="image">
+						<img src="img/services/modal-services-img-1-mobile.jpg" width="256" height="200" alt="image">
 					</picture>
 				</div>
 			</div>
@@ -797,7 +879,7 @@
 				<div class="modal-services__image-holder">
 					<picture>
 						<source srcset="img/services/modal-services-img-2.webp" media="(min-width:1200px)">
-						<img src="img/services/modal-services-img-2-mobile.webp" alt="image">
+						<img src="img/services/modal-services-img-2-mobile.jpg" width="257" height="350" alt="image">
 					</picture>
 				</div>
 			</div>
@@ -817,7 +899,7 @@
 				<div class="modal-services__image-holder">
 					<picture>
 						<source srcset="img/services/modal-services-img-3.webp" media="(min-width:1200px)">
-						<img src="img/services/modal-services-img-3-mobile.webp" alt="image">
+						<img src="img/services/modal-services-img-3-mobile.jpg" width="256" height="200" alt="image">
 					</picture>
 				</div>
 			</div>

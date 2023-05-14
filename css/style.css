@@ -454,7 +454,7 @@ textarea {
 	column-gap: 32px;
 }
 
-.header__link {
+.header__list a {
 	position: relative;
 	padding: 4px 0px 12px;
 	color: var(--color-base-color-black-50);
@@ -465,7 +465,7 @@ textarea {
 	transition: all 0.3s ease 0s;
 }
 
-.header__link::before {
+.header__list a::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -477,7 +477,7 @@ textarea {
 	transition: all 0.3s ease 0s;
 }
 
-.header__link:hover::before {
+.header__list a:hover::before {
 	width: 100%;
 }
 
@@ -675,6 +675,15 @@ textarea {
 .hero__image-holder {
 	margin-right: 70px;
 	margin-top: 140px;
+	width: 100%;
+	max-width: 503px;
+	height: auto;
+}
+
+.hero__image-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .hero__text-quotes {
@@ -1050,7 +1059,7 @@ textarea {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 113px 0px;
+	padding: 97px 0px;
 }
 
 .cta__content {
@@ -1112,7 +1121,7 @@ textarea {
 	width: 100%;
 }
 
-.form-block form {
+.form .form__inner {
 	display: flex;
 	flex-direction: column;
 	row-gap: 16px;
@@ -1129,7 +1138,7 @@ textarea {
 	border-radius: 5px;
 }
 
-.form-block__checkbox-holder {
+.form-block__checkbox-holder span {
 	line-height: 20px;
 	display: flex;
 	flex-direction: row;
@@ -1238,11 +1247,27 @@ textarea {
 }
 
 .showcase__left-column {
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .showcase__right-column {
 	width: calc(100% - 450px);
+}
+
+.showcase__image-holder {
+	width: 100%;
+	max-width: 451px;
+	height: auto;
+}
+
+.showcase__image-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .showcase .btn-gif {
@@ -1277,7 +1302,7 @@ textarea {
 	font-weight: 700;
 }
 
-.showcase form {
+.showcase .form .form__inner {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1295,18 +1320,18 @@ textarea {
 	width: 100%;
 }
 
-.showcase form .btn-full {
+.showcase .form .btn-full {
 	width: 100%;
 	background-color: var(--color-base-color-light-orange-source);
 	font-size: 16px;
 	line-height: 24px;
 }
 
-.showcase form .btn-full:hover {
+.showcase .form .btn-full:hover {
 	background-color: var(--color-base-color-light-orange-400);
 }
 
-.showcase form .btn-full:active {
+.showcase .form .btn-full:active {
 	background-color: var(--color-base-color-light-orange-300);
 	outline: none;
 }
@@ -2569,8 +2594,9 @@ textarea {
 	}
 
 	.header__logo {
-		width: 75px;
-		height: 20px;
+		width: 100%;
+		max-width: 75px;
+		height: auto;
 	}
 
 	.header__logo img {
@@ -2653,11 +2679,11 @@ textarea {
 	}
 
 
-	.header__list li:first-child .header__link {
+	.header__list li.current-menu-item a {
 		position: relative;
 	}
 
-	.header__list li:first-child .header__link::before {
+	.header__list li.current-menu-item a::before {
 		content: '';
 		position: absolute;
 		bottom: 0;
@@ -2668,7 +2694,7 @@ textarea {
 		background-color: var(--color-base-color-light-orange-source);
 	}
 
-	.header__list .header__link:hover {
+	.header__list a:hover {
 		color: var(--color-base-color-light-orange-source);
 	}
 
@@ -3092,12 +3118,17 @@ textarea {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-start;
 		row-gap: 32px;
 	}
 
 	.showcase__left-column,
 	.showcase__right-column {
 		width: 50%;
+	}
+
+	.showcase__image-holder {
+		max-width: 301px;
 	}
 
 	.showcase__title {
@@ -3117,7 +3148,7 @@ textarea {
 		line-height: 20px;
 	}
 
-	.showcase form {
+	.showcase .form .form__inner {
 		margin: 0px 0px 32px 0px;
 		flex-direction: column;
 		row-gap: 8px;
@@ -3422,6 +3453,19 @@ textarea {
 		margin-bottom: 0;
 	}
 
+	.modal-book__image-holder {
+		width: 100%;
+		max-width: 145px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.modal-book__image-holder img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 	/* -- Modal-services styles----------------------------- */
 	.modal-services {
 		width: 288px;
@@ -3636,7 +3680,7 @@ textarea {
 		display: flex;
 		align-items: center;
 		padding: 0;
-		height: 85px;
+		min-height: 85px;
 	}
 
 	.form-block__checkbox-holder {
@@ -3661,6 +3705,7 @@ textarea {
 
 	.showcase__left-column {
 		row-gap: 27px;
+		max-width: 100%;
 	}
 
 	.showcase__right-column {
@@ -3843,6 +3888,10 @@ textarea {
 
 	.quote-block__image-holder {
 		flex-shrink: 0;
+	}
+
+	.showcase__image-holder {
+		max-width: 225px;
 	}
 
 	/* -- Reviews styles----------------------------- */
