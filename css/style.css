@@ -1,5 +1,7 @@
 @import url(fonts.css);
 
+
+
 /* -- Base styles----------------------------- */
 :root {
 	--color-base-color-black-50: #f3f3f3;
@@ -777,7 +779,7 @@ textarea {
 .about {
 	display: flex;
 	flex-direction: row;
-	background-image: url('../img/about-bg.webp');
+	background-image: url('../img/about-bg.png');
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -1052,7 +1054,7 @@ textarea {
 
 .cta__right-column {
 	width: 60.52%;
-	background-image: url('../img/cta-img-bg.webp');
+	background-image: url('../img/cta-img-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: left top;
@@ -1196,7 +1198,7 @@ textarea {
 .showcase {
 	position: relative;
 	padding: 128px 0px;
-	background-image: url(../img/showcase-bg-img.webp);
+	background-image: url(../img/showcase-bg-img.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -3958,12 +3960,10 @@ textarea {
 
 
 
-/* Скрыть стандартные чекбоксы */
 .form-block__checkbox input[type="checkbox"] {
 	display: none;
 }
 
-/* Создание кастомных чекбоксов */
 .form-block__checkbox label {
 	position: relative;
 	width: 100%;
@@ -3976,7 +3976,6 @@ textarea {
 	background-color: #ECECEC;
 }
 
-/* Оформление визуального замещения */
 .form-block__checkbox label::before {
 	content: "";
 	position: absolute;
@@ -4013,7 +4012,6 @@ textarea {
 	visibility: visible;
 }
 
-/* Оформление визуального состояния "выбран" */
 .form-block__checkbox input[type="checkbox"]:checked+.custom-checkbox-label:before {
 	background-color: #000;
 }
@@ -4028,8 +4026,6 @@ input[type="checkbox"]:checked+label {
 	box-shadow: 0 0 0 2px #105DFB;
 }
 
-/* Оформление визуального состояния "наведение" */
 .form-block__checkbox label:hover:before {
 	border-color: #999;
-	/* Цвет границы при наведении */
 }

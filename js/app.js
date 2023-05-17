@@ -103,6 +103,9 @@ function initScrollTo() {
 if ($('[data-fancybox=""]').length > 0) {
 	$('[data-fancybox=""]').fancybox({
 		autoFocus: false,
-		touch: false
+		touch: false,
 	});
 }
+
+
+
