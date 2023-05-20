@@ -94,6 +94,8 @@ h6 {
 	font-weight: inherit;
 }
 
+
+
 html,
 body {
 	height: 100%;
@@ -105,12 +107,12 @@ body {
 }
 
 
+
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-
 }
 
 .content {
@@ -127,14 +129,16 @@ body {
 	margin: 0 auto;
 }
 
+
+
 .logo {
 	display: block;
 	width: fit-content;
 }
 
-body.fancybox-active {
+/* body.fancybox-active {
 	overflow: hidden;
-}
+} */
 
 .slick-dots button {
 	cursor: pointer;

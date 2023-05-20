@@ -107,5 +107,3 @@ if ($('[data-fancybox=""]').length > 0) {
 	});
 }
 
-
-
